@@ -19,7 +19,7 @@ Use pip to install from PyPI:
     pip install sphinx-removed-in
 
 
-Configure your ``config.py``:
+Configure your ``conf.py``:
 
 ::
 
