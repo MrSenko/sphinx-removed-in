@@ -1,5 +1,5 @@
 test:
-	./setup.py test
+	flake8 setup.py sphinx_removed_in
 
 build: test
 	./setup.py sdist

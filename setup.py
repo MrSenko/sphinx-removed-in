@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import os
-import sys
 from setuptools import setup, find_packages
 
 __version__ = __import__('sphinx_removed_in').__version__
@@ -10,17 +8,17 @@ with open('README.rst') as file:
     long_description = file.read()
 
 config = {
-    'name' : 'sphinx-removed-in',
-    'version' : __version__,
-    'packages' : find_packages(),
-    'author' : 'Alexander Todorov',
-    'author_email' : 'atodorov@MrSenko.com',
-    'license' : 'BSD',
-    'description' : 'versionremoved and removed-in directives for Sphinx',
-    'long_description' : long_description,
-    'url' : 'https://github.com/MrSenko/sphinx-removed-in',
-    'keywords' : ['Sphinx'],
-    'classifiers' : [
+    'name': 'sphinx-removed-in',
+    'version': __version__,
+    'packages': find_packages(),
+    'author': 'Alexander Todorov',
+    'author_email': 'atodorov@MrSenko.com',
+    'license': 'BSD',
+    'description': 'versionremoved and removed-in directives for Sphinx',
+    'long_description': long_description,
+    'url': 'https://github.com/MrSenko/sphinx-removed-in',
+    'keywords': ['Sphinx'],
+    'classifiers': [
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Environment :: Web Environment',
@@ -38,8 +36,8 @@ config = {
         'Topic :: Text Processing',
         'Topic :: Utilities',
     ],
-    'zip_safe' : False,
-    'install_requires' : ['Sphinx'],
+    'zip_safe': False,
+    'install_requires': ['Sphinx'],
 }
 
 setup(**config)
