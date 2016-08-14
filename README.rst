@@ -1,6 +1,12 @@
 Sphinx Removed In Extension
 ---------------------------
 
+.. image:: https://travis-ci.org/MrSenko/sphinx-removed-in.svg?branch=master
+   :target: https://travis-ci.org/MrSenko/sphinx-removed-in
+
+.. image:: https://coveralls.io/repos/github/MrSenko/sphinx-removed-in/badge.svg?branch=master
+   :target: https://coveralls.io/github/MrSenko/sphinx-removed-in?branch=master
+
 .. image:: https://landscape.io/github/MrSenko/sphinx-removed-in/master/landscape.svg?style=flat
    :target: https://landscape.io/github/MrSenko/sphinx-removed-in/master
    :alt: Code Health
