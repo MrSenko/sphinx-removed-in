@@ -1,6 +1,8 @@
-from .version import __version__
 from sphinx.locale import versionlabels
 from sphinx.directives.other import VersionChange
+
+
+__version__ = '0.1.0'
 
 
 def setup(app):

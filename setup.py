@@ -3,8 +3,8 @@
 import os
 import sys
 from setuptools import setup, find_packages
-from .sphinx_removed_in.version import __version__
 
+__version__ = __import__('sphinx_removed_in').__version__
 
 with open('README.rst') as file:
     long_description = file.read()
