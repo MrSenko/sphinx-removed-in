@@ -38,7 +38,6 @@ config = {
     ],
     'zip_safe': False,
     'install_requires': ['Sphinx'],
-    'setup_requires': ['Sphinx', 'setuptools>=40.0'],
 }
 
 setup(**config)
