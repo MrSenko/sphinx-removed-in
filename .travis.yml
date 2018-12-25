@@ -3,7 +3,7 @@ after_success:
 before_install:
 - pip install coveralls
 install:
-- pip install -r test_requirements.txt
+- pip install -r tests/requirements.txt
 language: python
 notifications:
   email:
