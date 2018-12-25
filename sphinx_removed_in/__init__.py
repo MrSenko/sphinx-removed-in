@@ -2,7 +2,7 @@ __version__ = '0.1.2'
 
 
 def setup(app):
-    from sphinx.locale import versionlabels
+    from sphinx.domains.changeset import versionlabels
     from sphinx.directives.other import VersionChange
 
     for _directive in ['versionremoved', 'removed-in']:
