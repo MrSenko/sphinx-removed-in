@@ -2,7 +2,10 @@ __version__ = '0.2.0'
 
 
 def setup(app):
-    from sphinx.domains.changeset import versionlabels
+    try:
+        from sphinx.domains.changeset import versionlabels
+    except ImportError:
+        from sphinx.locale import versionlabels
     from sphinx.directives.other import VersionChange
 
     try:
