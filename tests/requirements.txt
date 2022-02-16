@@ -1,4 +1,4 @@
 Sphinx
 flake8
 coverage
-sphinx-testing
+pytest
