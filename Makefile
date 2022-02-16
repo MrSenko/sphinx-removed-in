@@ -1,6 +1,6 @@
 test:
 	flake8 setup.py sphinx_removed_in tests
-	python -m unittest discover -v
+	python -m pytest -v
 
 build: test
 	./setup.py sdist

@@ -1,22 +1,16 @@
 import os
 import sys
-import unittest
-from sphinx_testing import with_app
+import pytest
 
 
-sys.path.insert(0,
-                os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+PARENT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+sys.path.insert(0, PARENT)
 
 
-class TestExtension(unittest.TestCase):
-    @with_app(buildername='html', srcdir='./docs', copy_srcdir_to_tmpdir=True)
-    def test_sphinx_build(self, app, status, warning):
-        app.build()
-        html = (app.outdir / 'index.html').read_text()
+@pytest.mark.sphinx(buildername='html', srcdir=os.path.join(PARENT, 'docs'))
+def test_sphinx_build(app, status, warning):
+    app.build()
+    html = (app.outdir / 'index.html').read_text()
 
-        self.assertIn('Removed in version 1.2', html)
-        self.assertIn('Removed in version 3.2', html)
-
-
-if __name__ == "__main__":
-    unittest.main()
+    assert 'Removed in version 1.2' in html
+    assert 'Removed in version 3.2' in html
