@@ -10,7 +10,7 @@ with open('README.rst') as file:
 config = {
     'name': 'sphinx-removed-in',
     'version': __version__,
-    'packages': find_packages(),
+    'packages': find_packages(exclude=['tests']),
     'author': 'Alexander Todorov',
     'author_email': 'atodorov@MrSenko.com',
     'license': 'BSD',
