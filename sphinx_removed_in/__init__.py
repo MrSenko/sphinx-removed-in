@@ -19,4 +19,8 @@ def setup(app):
             versionlabel_classes[_directive] = 'removed'
             app.add_directive(_directive, VersionChange)
 
-    return {'version': __version__}
+    return {
+        'version': __version__,
+        'parallel_read_safe': True,
+        'parallel_write_safe': True,
+    }
