@@ -6,7 +6,7 @@ def setup(app):
         from sphinx.domains.changeset import versionlabels
     except ImportError:
         from sphinx.locale import versionlabels
-    from sphinx.directives.other import VersionChange
+    from sphinx.domains.changeset import VersionChange
 
     try:
         from sphinx.domains.changeset import versionlabel_classes
